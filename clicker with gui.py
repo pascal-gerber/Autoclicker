@@ -20,8 +20,8 @@ def startUp(sleepingTime, key):
         while 1:
             global clicking
             global flicker
-            del clicking #deletes to not overload the PC overtime
-            keyboard.wait(str(key)) #change key for autoclicker change
+            del clicking
+            keyboard.wait(str(key))
             flicker = not flicker
             clicking = threading.Thread(target = clicker)
             clicking.start()
